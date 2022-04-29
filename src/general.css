@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #035500;
+    --secondary-color: #ffffff;
+    --page-background-color: #448444;
+    --text-background-color: #ffffff;
+    --text-color: #000000;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+}
+body {
+    background-color: var(--page-background-color);
+    overflow-y: scroll;
+}
+
+.article {
+    background-color: var(--text-background-color);
+    padding: 10px 10px;
+
+}
+.article__heading {
+    margin: 5px 5px;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+}
+.article__link {
+    color: var(--primary-color);
+    text-decoration: underline var(--primary-color);
+    font-weight: bold;
+}
+.article__link:hover {
+    font-weight: lighter;
+}
+
+.nav {
+    background-color: var(--primary-color);
+    padding: 50px 10px;
+    border-bottom: 10px solid var(--secondary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+.nav__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+.nav__link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: solid;
+}
+.nav__link--active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: solid;
+}
+.nav__title {
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+}
+
+.section__heading {
+    margin: 25px 5px;
+    padding: 10px 0px 8px 0px;
+    font-size: 25px;
+}
+.section__subheading {
+    margin: 20px 5px;
+    padding: 10px 0px 0px 0px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.section__text {
+    margin: 10px 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.section__text--after-subheading {
+    margin: 5px 5px;
+}
+
+.code-block {
+    display: inline-block;
+    max-width: 100%;
+
+    padding-right: 25%;
+    border: solid rgba(0, 0, 0, 0.08) 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.table {
+    margin:40px 0;
+}
+
+.table__cell {
+    background-color: rgba(0, 0, 0, 0.12);
+    border: 3px solid rgba(0, 0, 0, 0.07);
+}
+.table__header-text {
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px 4px;
+    border-top: 10px solid var(--secondary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+.footer__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    word-break: break-word;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 10px inherit;
+}
+.footer__link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: solid;
+}
+
+@media (orientation: landscape) {
+    .article {
+        width:70%;
+        padding:5% 15%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section__inline-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .nav__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .nav__title {
+        font-size: 25px;
+    }
+}
+
+/* For those who own a screen that can fold */
+@media screen and (max-width: 300px){
+    .nav__title {
+        font-size: 22px;
+    }
+}
