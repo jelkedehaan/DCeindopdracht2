@@ -113,9 +113,9 @@ body {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 20px 4px;
+    padding: 40px 40px;
     border-top: 10px solid var(--secondary-color);
-    text-align: center;
+    text-align: left;
     color: var(--secondary-color);
 }
 .footer__link {
@@ -131,6 +131,11 @@ body {
     color: var(--primary-color);
     text-decoration: solid;
 }
+.map {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
 
 @media (orientation: landscape) {
     .article {
