@@ -61,12 +61,12 @@ body {
 }
 .nav__title {
     margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Lucida Handwriting", Times, serif;
     font-size: 35px;
 }
 
 .section__heading {
-    margin: 25px 5px;
+    margin: 20px 5px 10px 5px;
     padding: 10px 0px 8px 0px;
     font-size: 25px;
 }
@@ -82,6 +82,9 @@ body {
     text-justify: inter-word;
 }
 .section__text--after-subheading {
+    margin: 5px 5px;
+}
+.section__text--after-heading {
     margin: 5px 5px;
 }
 
@@ -132,7 +135,7 @@ body {
     text-decoration: solid;
 }
 .map {
-    width: 100%;
+    width: 50%;
     max-width: 900px;
     height: auto;
   }
